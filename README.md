@@ -17,3 +17,12 @@ The dataset used in this analysis is available on Kaggle: [MBA Admission Dataset
 1. Identify key factors influencing MBA admissions decisions.
 2. Build a predictive model to estimate the likelihood of acceptance.
 3. Provide insights for prospective applicants on areas to focus on for improved chances of admission.
+
+## Credits
+
+This project was completed as part of the DS4200 course at Northeastern University, Fall 2024.
+
+- **Caden Weaver**
+- **Gauri Chasia** 
+- **Aman Bhojwani** 
+- **Ryan Wu**
