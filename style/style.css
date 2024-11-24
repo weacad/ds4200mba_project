@@ -14,8 +14,10 @@ img{
 
 }
 
-img{
-
+p{
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  line-height: 1.5;
 }
 
 
@@ -90,8 +92,8 @@ section:nth-child(even) h1.retroshadow {
 	text-shadow:4px 4px 0px #d5d5d5,7px 7px 0px rgba(0, 0, 0, 0.2);
 }
 section {
-	min-height: 100vh;
-	padding: 20px;
+	min-height: 20vh;
+	padding: 25px;
 	box-sizing: border-box;
 	position: relative;
 	overflow: auto;
@@ -101,6 +103,9 @@ section {
 }
 #vis{
 	margin: 5vh;
+}
+#static{
+  padding-bottom:50px;
 }
 #interactive {
 	min-height: 100vh;
@@ -176,4 +181,3 @@ section {
 #navigation button:active {
   transform: scale(0.95); /* Slightly shrink button when clicked */
 }
-
