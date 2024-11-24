@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>MBA Data Analysis</title>
+      <!-- Link to Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+      <!-- Stylesheet -->
+      <link rel="stylesheet" href="style/style.css">
+      <!-- D3.js Library -->
+      <script src="https://d3js.org/d3.v4.js"></script>
+      <script src="js/slideshow.js"></script>
+   </head>
+   <body>
+      <nav>
+         <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#data">Data</a></li>
+            <li><a href="#static">Static Visualizations</a></li>
+            <li><a href="#interactive">Interactive Visualizations</a></li>
+            <li><a href="#summary">Summary</a></li>
+         </ul>
+      </nav>
+      <div id="content">
+         <section id="introduction">
+            <h1 class="retroshadow">Introduction</h1>
+            <p>The process of applying to MBA programs is highly competitive, with applicants vying for limited spots in top-tier schools. Admissions committees consider various factors such as GMAT scores, undergraduate GPAs, and work experience. This project aims to analyze an MBA admissions dataset to identify which factors are most predictive of admission success. By understanding these trends, prospective students can gain insights into which areas to focus on during their applications. Additionally, admissions committees can benefit from streamlined decision-making tools based on historical applicant data. This analysis is particularly relevant as MBA programs globally seek to attract a diverse, qualified pool of candidates amid growing demand for advanced business education. From this dataset, we can gain meaningful information on what it takes for a student to be admitted in such a rigorous and demanding program. This information would be valuable for prospective students to start preparing if they are interested in applying to this MBA program or a similar one. 
+            </p>
+         </section>
+         <section id="data">
+            <h1 class="retroshadow">Data</h1>
+            <p>Data info here</p>
+         </section>
+         <section id="static">
+            <h1 class="retroshadow">Static Visualizations</h1>
+            <div id="visualization-container">
+               <!-- Image/Visualization -->
+               <div class="visualization" id="viz1">
+                  <div id="histogram"></div>
+                  <p>The GPA histogram shares some helpful information for prospect MBA applicants. There is a very normal distribution that forms a bell curve around the 3.2-3.3 GPA range. We can see that a vast majority of students fall into this range. This data is good information in general, but also for prospect students who can gain insight into what their GPA’s should be to increase their chances of getting accepted. Prospect students should try to keep their GPAs around 3.1 or higher for the best odds. </p>
+               </div>
+               <div class="visualization" id="viz2" style="display: none;">
+                  <img src="charts/bar1.png" alt="Bar Chart Visualization">
+                  <p>The above visualization has 2 subplots that represent the number of applicants who are accepted and rejected into the MBA program, segmented by gender and race. By setting a common y axis on both plots, the comparison becomes much clearer, and we are able to assess the differences between gender and race demographics. The charts express a trend of most applicants being White and Asian, reflected in both accepted and rejected applicants. The biggest demographic of general applicants are rejected white male applicants. Another thing the graphs show is that black applicants, both male and female, have more rejections proportionately to the other groups.
+                  </p>
+               </div>
+               <div class="visualization" id="viz3" style="display: none;">
+                  <img src="charts/visualization.svg" alt="Box Chart Visualization" style="max-width: 450px;">
+                  <p>This graph is meant to display the admission results solely looking at the amount of work
+                    experience the applicant had. What was interesting about this graph was that the mean amount
+                    of work experience for each admissions category was 5 across the board. In fact, the Admitted
+                    column actually had the lowest amount of work experience with someone having only 1 work
+                    experience. This goes to show that work experience definitely is not the most important part of
+                    the application and while it can still boost your resume, other components such as GPA and
+                    GMAT score are definitely weighed more heavily. This was very interesting since we had
+                    previously thought that work experience would be taken more seriously into consideration for
+                    this application. I think some other components that might go into this would be the quality of the
+                    work experience; someone might only have 1 work experience but it could have been very
+                    impressive. Or an applicant might have an excellent GPA and GMAT score to make up for that
+                    part of the application</p>
+               </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <div id="navigation">
+               <button onclick="prevVisualization()">Previous</button>
+               <button onclick="nextVisualization()">Next</button>
+            </div>
+         </section>
+         <section id="interactive">
+            <h1 class="retroshadow">Interactive Visualizations</h1>
+            <div class="button-container">
+               <a href="charts/gmat_scatter.html">Work Experience vs GMAT Scatter Plot</a> 
+               <a href="charts/gpa_gmat.html">GPA vs GMAT Scatter Plot</a>  
+            </div>
+         </section>
+         <section id="summary">
+            <h1 class="retroshadow">Summary</h1>
+            <p>Final thoughts and conclusions about the project.</p>
+         </section>
+      </div>
+      <script src="js/histogram.js"></script>
+      <script src="js/navbar.js"></script>
+   </body>
+</html>
