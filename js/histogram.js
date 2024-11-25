@@ -90,5 +90,5 @@ d3.csv("data/gpa_cleaned.csv", function (data) {
     .attr("text-anchor", "middle")
     .style("font-size", "16px")
     .style("font-weight", "bold")
-    .text("Histogram of GPA Distribution");
+    .text("Histogram of GPA Distribution for Accepted Applicants");
 });
