@@ -10,7 +10,7 @@
       <!-- Stylesheet -->
       <link rel="stylesheet" href="style/style.css">
       <!-- D3.js Library -->
-      <script src="https://d3js.org/d3.v4.js"></script>
+      <script src="https://d3js.org/d3.v7.min.js"></script>
       <script src="js/slideshow.js"></script>
       <link rel="icon" type="image/x-icon" href="cap.ico">
    </head>
@@ -38,8 +38,8 @@
             <div id="visualization-container">
                <!-- Image/Visualization -->
                <div class="visualization" id="viz1">
-                  <div id="histogram"></div>
-                  <p>This histogram of accepted applicant's GPAs is very helpful for prospect students. We can see that a majority of students have 3.2 or higher GPA, with a majority in the 3.3-3.4 range. Prospect MBA applicants should aim to have a GPA of 3.35 or above to be in the upper 50% of applicants. The curve is normally distributed around this mean. However, we can also see that there are accepted students with GPAs as low as around 2.9 GPA, which is also helpful for students with lower GPAs to know there is still a chance. If a student finds themselves in the lower ranges, they should focus on improving their other qualities like work experience or GMAT score for better chances.</p>
+                  <div id="combined"></div>
+                  <p>By examining GPA data from accepted and rejected applicants, potential MBA applicants can see what GPA they should aim for or how likely their chances of acceptance are based on GPA. We can see an average of around 3.35 for accepted applicants, but a vast majority are applying with around a 3.2 average. Potential applicants should aim to be on the right side of the normal distribution. We can also observe a harsh cutoff around the 3.2 gpa range for MBA applicants, indicating a point where applicants should definitely be above to have a chance at acceptance. </p>
                </div>
                <div class="visualization" id="viz2" style="display: none;">
                   <img src="charts/bar1.png" alt="Bar Chart Visualization">
@@ -81,7 +81,7 @@
             </p>
          </section>
       </div>
-      <script src="js/histogram.js"></script>
+      <script src="js/combined.js"></script>
       <script src="js/navbar.js"></script>
    </body>
 </html>
